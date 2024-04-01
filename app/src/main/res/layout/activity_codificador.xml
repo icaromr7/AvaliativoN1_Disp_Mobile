@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".Codificador"
+    android:background="@drawable/border"
+    android:layout_margin="15dp"
+    >
+
+
+    <Button
+        android:id="@+id/button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:text="Codificador e Descodificador"
+        android:textAlignment="center"
+        android:layout_below="@+id/button_back"
+        android:layout_marginTop="10dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/game"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@+id/titulo"
+        >
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:hint="Digite"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/border"
+        />
+    <Button
+        android:id="@+id/codificar"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:background="@drawable/gradient_cod"
+        android:text="Codificar"
+        android:layout_margin="5dp"
+        />
+    <Button
+        android:id="@+id/descodificar"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_toEndOf="@+id/codificar"
+        android:text="Descodificar"
+        android:layout_margin="5dp"
+        android:background="@drawable/gradient_descodificar"
+        />
+        <TextView
+            android:id="@+id/result"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:layout_below="@+id/descodificar"
+            android:hint="Resultado"
+            android:textAlignment="center"
+            android:textSize="40sp"
+            />
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>
